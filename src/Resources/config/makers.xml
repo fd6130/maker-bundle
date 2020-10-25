@@ -35,6 +35,10 @@
                 <tag name="maker.command" />
             </service>
 
+            <service id="maker.maker.make_dto" class="Symfony\Bundle\MakerBundle\Maker\MakeDto">
+                <tag name="maker.command" />
+            </service>
+
             <service id="maker.maker.make_entity" class="Symfony\Bundle\MakerBundle\Maker\MakeEntity">
                 <argument type="service" id="maker.file_manager" />
                 <argument type="service" id="maker.doctrine_helper" />
@@ -95,6 +99,10 @@
             </service>
 
             <service id="maker.maker.make_twig_extension" class="Symfony\Bundle\MakerBundle\Maker\MakeTwigExtension">
+                <tag name="maker.command" />
+            </service>
+
+            <service id="maker.maker.make_transformer" class="Symfony\Bundle\MakerBundle\Maker\MakeTransformer">
                 <tag name="maker.command" />
             </service>
 
