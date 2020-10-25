@@ -167,7 +167,7 @@ class MakeDto extends AbstractMaker
             // generate mapper config
             $generator->generateClass(
                 $mapperClassNameDetails->getFullName(),
-                __DIR__.'/Resources/skeleton/dto/Mapper.tpl.php',
+                __DIR__.'/../Resources/skeleton/dto/Mapper.tpl.php',
                 [
                     'dto_short_class_name' => $dtoClassNameDetails->getShortName(),
                     'dto_full_class_name' => $dtoClassNameDetails->getFullName(),
